@@ -4,6 +4,7 @@
 
 
 }
+
 img{
   display:block;
 }
@@ -26,14 +27,21 @@ a:visited{
   text-decoration: none;
 }
 body{
-  font-family:  sans-serif;
+  font-family:  Arial, sans-serif;
+  height: auto;
+  width: auto;
+  margin: 0 auto;
+  overflow: scroll;
 }
 #main{
   top: 200px;
-  position: absolute;
-  font-size:  sans-serif;
-  width: 100%;
-  height: 600px;
+  position: relative;
+  font-size:  Arial, sans-serif;
+
+  height: 200px;
+  width: 700px;
+
+  margin: 0 auto;
 }
 .searchform{
   margin-top: 22px;
@@ -43,11 +51,7 @@ body{
   height: 50px;
   position: relative;
 }
-#content{
-  width: 700px;
-  height: auto;
-  margin: 0 auto;
-}
+
 #submit-buttons input{
   margin: 30px auto;
 }
@@ -67,7 +71,7 @@ body{
   border: 0px;
   padding: 15px;
   text-align: center;
-  font-family:  sans-serif;
+  font-family:  Arial, sans-serif;
   font-size: 12px;
   font-weight: bold;
   color: #777;
@@ -116,35 +120,47 @@ body{
   padding-left: : 5px;
   display: inline-block;
 }
- .head .sign-in {
+ .sign-in {
   border-radius: 2px;
   padding: 10px;
-  width: 110%;
-  height: 90%;
+  font-weight: 500;
+  font-size: 13px;
   right: 10px;
-  background-color: #6487ff;
+  background-color: #6286ff;
   color: white;
 }
 .head .sign-in a{
   color: white;
+  display: inline-block;
 }
 #footer{
   position: absolute;
   right: 0;
   bottom: 0;
   left: 0;
+
+  display: block;
   height: 40px;
+  width: 100%;
   background-color: #EEE;
   font-size: 12px;
   font-weight: 700;
   border-top: solid 1px #DDD;
+  color: #666;
 }
-#foot-buttons{
+#l-foot-buttons, #r-foot-buttons{
   position: relative;
-  left: 20px;
 
-  width: 400px;
+  width: 250px;
   height: 25px;
+}
+#l-foot-buttons{
+  float:left;
+  margin-left: 20px;
+}
+#r-foot-buttons{
+  float:right;
+  margin-right: 20px;
 }
 .foot{
   font-size: inherit;
